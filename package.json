@@ -1,0 +1,20 @@
+{
+  "name": "@readme/emojis",
+  "version": "1.0.0",
+  "description": "A collection of all emojis supported on ReadMe.",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:readmeio/emojis.git"
+  },
+  "author": "Jon Ursenbach <jon@readme.io>",
+  "license": "ISC",
+  "scripts": {
+    "dist": "node build.js",
+    "test": "jest --coverage"
+  },
+  "devDependencies": {
+    "glob": "^7.1.6",
+    "jest": "^24.9.0"
+  }
+}
