@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A collection of all emojis supported on ReadMe.",
   "main": "src/index.js",
+  "files": [
+    "unicode"
+  ],
   "repository": {
     "type": "git",
     "url": "git@github.com:readmeio/emojis.git"
