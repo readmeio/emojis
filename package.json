@@ -4,7 +4,8 @@
   "description": "A collection of all emojis supported on ReadMe.",
   "main": "src/index.js",
   "files": [
-    "unicode"
+    "unicode",
+    "src/img"
   ],
   "repository": {
     "type": "git",
