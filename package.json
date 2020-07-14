@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "files": [
     "unicode",
-    "src/img"
+    "src"
   ],
   "repository": {
     "type": "git",
