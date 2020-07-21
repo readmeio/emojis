@@ -17,18 +17,21 @@ const Emoji = require('@readme/emojis').emoji;
 const emojis = new Emoji();
 
 if (emojis.is('dog')) {
-    console.log('dog is supported');
+  console.log('dog is supported');
 }
 ```
 
-## Rebuilding the dist cache
+## Contribution
+To add a new emoji to this repository, run `node add.js`.
+
+For example:
+
+```shell
+$ node add.js ~/Desktop/Mask.png.png owlbert-mask
+🦉 Emoji resized and added!
+```
+
+### Rebuilding the dist cache
 ```
 npm run dist
 ```
-
-## Credits
-[Jon Ursenbach](https://github.com/erunion)
-
-## License
-
-ISC

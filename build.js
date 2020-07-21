@@ -1,7 +1,7 @@
 const fs = require('fs');
 const glob = require('glob');
 
-const files = glob.sync('*.png', { cwd: 'src' });
+const files = glob.sync('*.png', { cwd: 'src/img' });
 const emojis = files.map(file => file.replace('.png', ''));
 
 const out = [
@@ -16,6 +16,6 @@ const out = [
   'if(typeof exports !== "undefined") {exports.emoji = Emoji;}',
 ];
 
-fs.writeFileSync('index.js', out.join('\n'));
+fs.writeFileSync('src/index.js', out.join('\n'));
 
 console.log('Dist cache was rebuilt!');
