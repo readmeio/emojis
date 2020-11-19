@@ -14,12 +14,14 @@
   "author": "Jon Ursenbach <jon@readme.io>",
   "license": "ISC",
   "scripts": {
+    "build": "./bin/regenerate-unicode",
     "dist": "node build.js",
     "test": "jest --coverage"
   },
   "devDependencies": {
     "glob": "^7.1.6",
     "jest": "^24.9.0",
+    "node-fetch": "^2.6.1",
     "sharp": "^0.25.4"
   }
 }

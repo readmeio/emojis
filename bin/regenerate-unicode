@@ -1,0 +1,21 @@
+#! /usr/bin/env node
+const fs = require('fs')
+const fetch = require('node-fetch')
+
+fetch('https://api.github.com/repos/github/gemoji/contents/db/emoji.json', {
+  headers: {Accept: 'application/vnd.github.v3.raw'}
+}).then((response) => {
+  return response.json()
+}).then(gemoji => {
+  const emojis = [];
+
+  gemoji.forEach(emoji => {
+    emojis.push({
+      emoji: emoji.emoji,
+      aliases: emoji.aliases,
+      ios_version: emoji.ios_version,
+    })
+  });
+
+  fs.writeFileSync(`${__dirname}/../unicode/index.json`, JSON.stringify(emojis))
+});
