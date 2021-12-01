@@ -26,12 +26,12 @@
     "test": "jest --coverage"
   },
   "devDependencies": {
-    "@readme/eslint-config": "^7.1.1",
-    "eslint": "^7.32.0",
+    "@readme/eslint-config": "^8.0.2",
+    "eslint": "^8.3.0",
     "glob": "^7.1.7",
     "jest": "^27.2.0",
     "node-fetch": "^2.6.1",
-    "prettier": "^2.4.1",
+    "prettier": "^2.5.0",
     "sharp": "^0.29.1"
   },
   "prettier": "@readme/eslint-config/prettier"
