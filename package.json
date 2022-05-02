@@ -22,13 +22,14 @@
     "lint": "eslint .",
     "pretest": "npm run lint",
     "prettier": "prettier --list-different --write \"./**/**.{js,jsx}\"",
-    "test": "jest --coverage"
+    "test": "mocha"
   },
   "devDependencies": {
     "@readme/eslint-config": "^8.0.2",
+    "chai": "^4.3.6",
     "eslint": "^8.3.0",
     "glob": "^8.0.1",
-    "jest": "^28.0.3",
+    "mocha": "^10.0.0",
     "node-fetch": "^2.6.1",
     "prettier": "^2.5.0",
     "sharp": "^0.30.1"
