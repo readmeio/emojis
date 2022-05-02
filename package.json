@@ -1,6 +1,6 @@
 {
   "name": "@readme/emojis",
-  "version": "4.0.1",
+  "version": "5.0.0",
   "description": "A collection of all emojis supported on ReadMe.",
   "main": "src/index.js",
   "files": [
