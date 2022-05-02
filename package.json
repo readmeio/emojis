@@ -12,8 +12,7 @@
     "url": "git@github.com:readmeio/emojis.git"
   },
   "engines": {
-    "node": "^12 || ^14 || ^16",
-    "npm": "^7"
+    "node": ">=14"
   },
   "author": "Jon Ursenbach <jon@readme.io>",
   "license": "ISC",
