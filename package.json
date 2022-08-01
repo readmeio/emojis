@@ -25,7 +25,7 @@
     "test": "mocha"
   },
   "devDependencies": {
-    "@readme/eslint-config": "^8.0.2",
+    "@readme/eslint-config": "^9.0.0",
     "chai": "^4.3.6",
     "eslint": "^8.3.0",
     "glob": "^8.0.1",
