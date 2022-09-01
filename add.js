@@ -1,5 +1,6 @@
-const sharp = require('sharp');
 const path = require('path');
+
+const sharp = require('sharp');
 
 const prog = path.basename(process.argv[1]);
 const args = process.argv.slice(2);
