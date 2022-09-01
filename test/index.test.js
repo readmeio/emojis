@@ -1,4 +1,5 @@
 const { expect } = require('chai');
+
 const Emoji = require('../src').emoji;
 
 const emojis = new Emoji();

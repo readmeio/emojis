@@ -1,4 +1,5 @@
 const fs = require('fs');
+
 const glob = require('glob');
 
 const files = glob.sync('*.png', { cwd: 'src/img' });
