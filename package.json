@@ -25,13 +25,13 @@
     "test": "mocha"
   },
   "devDependencies": {
-    "@readme/eslint-config": "^10.1.0",
+    "@readme/eslint-config": "^10.5.2",
     "chai": "^4.3.6",
-    "eslint": "^8.3.0",
+    "eslint": "^8.39.0",
     "glob": "^8.0.1",
     "mocha": "^10.0.0",
     "node-fetch": "^2.6.1",
-    "prettier": "^2.5.0",
+    "prettier": "^2.8.8",
     "sharp": "^0.31.1"
   },
   "prettier": "@readme/eslint-config/prettier"
