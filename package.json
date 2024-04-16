@@ -12,7 +12,7 @@
     "url": "git@github.com:readmeio/emojis.git"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=18"
   },
   "author": "Jon Ursenbach <jon@readme.io>",
   "license": "ISC",
@@ -21,18 +21,16 @@
     "dist": "node build.js",
     "lint": "eslint .",
     "pretest": "npm run lint",
-    "prettier": "prettier --list-different --write \"./**/**.{js,jsx}\"",
-    "test": "mocha"
+    "prettier": "prettier --list-different --write \"./**/**.{js,json}\"",
+    "test": "vitest run"
   },
   "devDependencies": {
-    "@readme/eslint-config": "^10.5.2",
-    "chai": "^4.3.6",
+    "@readme/eslint-config": "^14.0.0",
     "eslint": "^8.39.0",
-    "glob": "^8.0.1",
-    "mocha": "^10.0.0",
-    "node-fetch": "^2.6.1",
-    "prettier": "^2.8.8",
-    "sharp": "^0.31.1"
+    "glob": "^10.3.12",
+    "prettier": "^3.2.5",
+    "sharp": "^0.33.3",
+    "vitest": "^1.5.0"
   },
   "prettier": "@readme/eslint-config/prettier"
 }
