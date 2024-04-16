@@ -10,8 +10,15 @@ fetch('https://api.github.com/repos/github/gemoji/contents/db/emoji.json', {
 
     gemoji.forEach(emoji => {
       // filter emoji by iOS version https://developer.apple.com/support/app-store/
-      if (emoji.ios_version <= 12) {
-        emojis.push([emoji.emoji, emoji.aliases]);
+      if (emoji.ios_version <= 15) {
+        // For flag emojis like 🇷🇺 it's in gemoji as `ru` but has a tag for `russia`. Since we want
+        // folks to be able to type in either for it we should combine the emoji alias with any
+        // tags that might be present.
+        if (emoji.category === 'Flags') {
+          emojis.push([emoji.emoji, Array.from(new Set([...emoji.aliases, ...emoji.tags].filter(Boolean)))]);
+        } else {
+          emojis.push([emoji.emoji, emoji.aliases]);
+        }
       }
     });
 
