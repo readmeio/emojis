@@ -21,7 +21,7 @@
     "dist": "node build.js",
     "lint": "eslint .",
     "pretest": "npm run lint",
-    "prettier": "prettier --list-different --write \"./**/**.{js,jsx}\"",
+    "prettier": "prettier --list-different --write \"./**/**.{js,json}\"",
     "test": "vitest run"
   },
   "devDependencies": {
