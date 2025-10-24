@@ -19,18 +19,20 @@
   "scripts": {
     "build": "./bin/regenerate-unicode",
     "dist": "node build.js",
-    "lint": "eslint .",
+    "lint": "npm run lint:js && npm run prettier",
+    "lint:js": "biome check",
     "pretest": "npm run lint",
-    "prettier": "prettier --list-different --write \"./**/**.{js,json}\"",
+    "prettier": "prettier --check .",
+    "prettier:write": "prettier --check --write .",
     "test": "vitest run"
   },
   "devDependencies": {
-    "@readme/eslint-config": "^14.0.0",
-    "eslint": "^8.39.0",
+    "@biomejs/biome": "^2.2.7",
+    "@readme/standards": "^2.3.0",
     "glob": "^10.3.12",
     "prettier": "^3.2.5",
     "sharp": "^0.33.3",
-    "vitest": "^1.5.0"
+    "vitest": "^4.0.2"
   },
-  "prettier": "@readme/eslint-config/prettier"
+  "prettier": "@readme/standards/prettier"
 }

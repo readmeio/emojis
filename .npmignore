@@ -1,4 +1,4 @@
 .github/
 coverage/
-.eslint*
+.biome*
 .prettier*

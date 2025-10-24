@@ -1,4 +1,5 @@
 # @readme/emojis
+
 [![Build](https://github.com/readmeio/emojis/workflows/CI/badge.svg)](https://github.com/readmeio/emojis)
 
 A collection of all emojis supported on [ReadMe](https://readme.com).
@@ -12,6 +13,7 @@ npm install --save @readme/emojis
 ```
 
 ## Usage
+
 ```js
 const Emoji = require('@readme/emojis').emoji;
 const emojis = new Emoji();
@@ -22,6 +24,7 @@ if (emojis.is('dog')) {
 ```
 
 ## Contribution
+
 To add a new emoji to this repository, run `node add.js`.
 
 For example:
@@ -32,6 +35,7 @@ $ node add.js ~/Desktop/Mask.png.png owlbert-mask
 ```
 
 ### Rebuilding the dist cache
+
 ```
 npm run dist
 ```
