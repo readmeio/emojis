@@ -2,37 +2,34 @@
   "name": "@readme/emojis",
   "version": "6.0.0",
   "description": "A collection of all emojis supported on ReadMe.",
-  "main": "src/index.js",
-  "files": [
-    "unicode",
-    "src"
-  ],
+  "license": "ISC",
+  "author": "Jon Ursenbach <jon@readme.io>",
   "repository": {
     "type": "git",
     "url": "git@github.com:readmeio/emojis.git"
   },
-  "engines": {
-    "node": ">=18"
-  },
-  "author": "Jon Ursenbach <jon@readme.io>",
-  "license": "ISC",
+  "files": [
+    "unicode",
+    "src"
+  ],
+  "main": "src/index.js",
   "scripts": {
     "build": "./bin/regenerate-unicode",
     "dist": "node build.js",
-    "lint": "npm run lint:js && npm run prettier",
-    "lint:js": "biome check",
+    "format": "npx oxlint --fix && npx oxfmt --write",
+    "lint": "npx oxlint && npx oxfmt --check",
     "pretest": "npm run lint",
-    "prettier": "prettier --check .",
-    "prettier:write": "prettier --check --write .",
     "test": "vitest run"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.2.7",
-    "@readme/standards": "^2.3.0",
+    "@readme/oxlint-config": "^1.3.1",
     "glob": "^10.3.12",
-    "prettier": "^3.2.5",
+    "oxfmt": "^0.49.0",
+    "oxlint": "^1.64.0",
     "sharp": "^0.33.3",
-    "vitest": "^4.0.2"
+    "vitest": "^4.1.6"
   },
-  "prettier": "@readme/standards/prettier"
+  "engines": {
+    "node": ">=18"
+  }
 }

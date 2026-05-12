@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 
 import { emoji as Emoji } from '../src/index.js';
+import unicode from '../unicode/index.json';
 
 const emojis = new Emoji();
 
@@ -14,7 +15,6 @@ describe('emojis', () => {
   });
 
   it('unicode dump should be valid json and contain emojis', () => {
-    const unicode = require('../unicode/index.json');
     expect(unicode.length).toBeGreaterThanOrEqual(1000);
   });
 });
